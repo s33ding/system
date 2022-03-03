@@ -9,3 +9,4 @@ flatpak install flathub com.spotify.Client -y
 flatpak install flathub org.videolan.VLC -y
 flatpak install flathub org.gnome.Extensions -y
 flatpak install flathub org.darktable.Darktable -y
+flatpak install flathub org.flameshot.Flameshot -y
