@@ -1,7 +1,11 @@
-flatpak install flathub io.gitlab.librewolf-community
-
-flatpak install flathub io.freetubeapp.FreeTube
-
-flatpak install flathub com.rafaelmardojai.Blanket
-
-flatpak install flathub io.freetubeapp.FreeTube
+flatpak install flathub io.gitlab.librewolf-community -y
+flatpak install flathub io.freetubeapp.FreeTube -y
+flatpak install flathub com.rafaelmardojai.Blanket -y
+flatpak install flathub io.freetubeapp.FreeTube -y
+flatpak install flathub org.telegram.desktop -y
+flatpak install flathub org.kde.krita -y
+flatpak install flathub org.inkscape.Inkscape -y
+flatpak install flathub com.spotify.Client -y
+flatpak install flathub org.videolan.VLC -y
+flatpak install flathub org.gnome.Extensions -y
+flatpak install flathub org.darktable.Darktable -y
