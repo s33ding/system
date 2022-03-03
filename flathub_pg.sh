@@ -10,3 +10,4 @@ flatpak install flathub org.videolan.VLC -y
 flatpak install flathub org.gnome.Extensions -y
 flatpak install flathub org.darktable.Darktable -y
 flatpak install flathub org.flameshot.Flameshot -y
+flatpak install flathub com.github.johnfactotum.Foliate -y
