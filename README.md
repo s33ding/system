@@ -1,3 +1,5 @@
+#CREDIT: inspired by Lucas Machine>>> https://github.com/perinm/bash-scripts
+
 # bash-scripts
 
 ## Contents
