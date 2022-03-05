@@ -1,0 +1,6 @@
+vim 
+tilix
+cmatrix
+goodvibes
+gnome-tweaks
+gnome-shell-pomodoro
