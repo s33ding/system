@@ -11,3 +11,4 @@ org.gnome.Extensions
 org.darktable.Darktable
 org.flameshot.Flameshot
 com.github.johnfactotum.Foliate 
+com.github.phase1geo.minder
