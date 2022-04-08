@@ -9,14 +9,6 @@ sudo apt install -y gdebi python3-pip python3-venv htop \
     gnupg \
     lsb-release
     
-#COMMAND=google-chrome
-#if ! command -v $COMMAND &> /dev/null; then
-#    wget -O ~/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#    sudo gdebi -n google-chrome-stable_current_amd64.deb
-#else
-#    echo "$COMMAND found"
-#fi
-
 COMMAND=code
 if ! command -v $COMMAND &> /dev/null; then
     sudo apt install -y software-properties-common apt-transport-https curl
@@ -48,6 +40,7 @@ if ! command -v $COMMAND &> /dev/null; then
 else
     echo "$COMMAND found"
 fi
+
 COMMAND=docker
 if ! command -v $COMMAND &> /dev/null; then
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -59,6 +52,7 @@ if ! command -v $COMMAND &> /dev/null; then
 else
     echo "$COMMAND found"
 fi
+
 COMMAND=docker-compose
 if ! command -v $COMMAND &> /dev/null; then
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -66,6 +60,67 @@ if ! command -v $COMMAND &> /dev/null; then
 else
     echo "$COMMAND found"
 fi
+
+COMMAND=obs
+if ! command -v $COMMAND &> /dev/null; then
+    sudo apt install -y ffmpeg
+    sudo add-apt-repository ppa:obsproject/obs-studio -y
+    sudo apt update
+    sudo apt install -y obs-studio
+else
+    echo "$COMMAND found"
+fi
+COMMAND=slack
+if ! command -v $COMMAND &> /dev/null; then
+    wget -O ~/slack.deb https://downloads.slack-edge.com/releases/linux/4.17.0/prod/x64/slack-desktop-4.17.0-amd64.deb
+    sudo gdebi -n ~/slack.deb
+else
+    echo "$COMMAND found"
+fi
+COMMAND=upwork
+if ! command -v $COMMAND &> /dev/null; then
+    wget -O ~/upwork.deb https://upwork-usw2-desktopapp.upwork.com/binaries/v5_5_0_11_61df9c99b6df4e7b/upwork_5.5.0.11_amd64.deb
+    sudo gdebi -n ~/upwork.deb
+else
+    echo "$COMMAND found"
+fi
+
+COMMAND=smplayer
+if ! command -v $COMMAND &> /dev/null; then
+    wget -O ~/smplayer.deb https://download.opensuse.org/repositories/home:/smplayerdev/xUbuntu_20.04/amd64/smplayer_21.1.0+2.1_amd64.deb
+    sudo gdebi -n ~/smplayer.deb
+else
+    echo "$COMMAND found"
+fi
+COMMAND=youtube-dl
+if ! command -v $COMMAND &> /dev/null; then
+    sudo -H pip install --upgrade youtube-dl
+else
+    echo "$COMMAND found"
+fi
+
+# COMMAND=discord
+# if ! command -v $COMMAND &> /dev/null; then
+#     wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+#     sudo gdebi -n ~/discord.deb
+# else
+#     echo "$COMMAND found"
+# fi
+# COMMAND=telegram-desktop
+# if ! command -v $COMMAND &> /dev/null; then
+#     wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
+#     sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
+# else
+#     echo "$COMMAND found"
+# fi
+
+#COMMAND=google-chrome
+#if ! command -v $COMMAND &> /dev/null; then
+#    wget -O ~/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#    sudo gdebi -n google-chrome-stable_current_amd64.deb
+#else
+#    echo "$COMMAND found"
+#fi
 
 #COMMAND=drovio
 #if ! command -v $COMMAND &> /dev/null; then
@@ -83,53 +138,3 @@ fi
 # else
 #     echo "$COMMAND found"
 # fi
-COMMAND=obs
-if ! command -v $COMMAND &> /dev/null; then
-    sudo apt install -y ffmpeg
-    sudo add-apt-repository ppa:obsproject/obs-studio -y
-    sudo apt update
-    sudo apt install -y obs-studio
-else
-    echo "$COMMAND found"
-fi
-# COMMAND=discord
-# if ! command -v $COMMAND &> /dev/null; then
-#     wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-#     sudo gdebi -n ~/discord.deb
-# else
-#     echo "$COMMAND found"
-# fi
-# COMMAND=telegram-desktop
-# if ! command -v $COMMAND &> /dev/null; then
-#     wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
-#     sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
-# else
-#     echo "$COMMAND found"
-# fi
-COMMAND=slack
-if ! command -v $COMMAND &> /dev/null; then
-    wget -O ~/slack.deb https://downloads.slack-edge.com/releases/linux/4.17.0/prod/x64/slack-desktop-4.17.0-amd64.deb
-    sudo gdebi -n ~/slack.deb
-else
-    echo "$COMMAND found"
-fi
-COMMAND=upwork
-if ! command -v $COMMAND &> /dev/null; then
-    wget -O ~/upwork.deb https://upwork-usw2-desktopapp.upwork.com/binaries/v5_5_0_11_61df9c99b6df4e7b/upwork_5.5.0.11_amd64.deb
-    sudo gdebi -n ~/upwork.deb
-else
-    echo "$COMMAND found"
-fi
-COMMAND=smplayer
-if ! command -v $COMMAND &> /dev/null; then
-    wget -O ~/smplayer.deb https://download.opensuse.org/repositories/home:/smplayerdev/xUbuntu_20.04/amd64/smplayer_21.1.0+2.1_amd64.deb
-    sudo gdebi -n ~/smplayer.deb
-else
-    echo "$COMMAND found"
-fi
-COMMAND=youtube-dl
-if ! command -v $COMMAND &> /dev/null; then
-    sudo -H pip install --upgrade youtube-dl
-else
-    echo "$COMMAND found"
-fi
