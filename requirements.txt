@@ -5,3 +5,4 @@ xlrd
 pynput
 gtts
 playsound
+tabulate
