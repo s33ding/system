@@ -8,7 +8,17 @@ sudo apt install -y gdebi python3-pip python3-venv htop \
     curl \
     gnupg \
     lsb-release
-    
+
+file=pip.txt
+for packages in $(cat $file); do
+   pip install -r $packages;
+done
+
+file=apts.txt
+for packages in $(cat $file); do 
+   sudo apt-get install $packages -y; 
+done
+
 COMMAND=code
 if ! command -v $COMMAND &> /dev/null; then
     sudo apt install -y software-properties-common apt-transport-https curl
@@ -61,6 +71,17 @@ else
     echo "$COMMAND found"
 fi
 
+
+
+#Installing Brave browser
+sudo apt install apt-transport-https curl -y
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update -y
+sudo apt install brave-browser -y
+
+
+
 COMMAND=obs
 if ! command -v $COMMAND &> /dev/null; then
     sudo apt install -y ffmpeg
@@ -77,6 +98,9 @@ if ! command -v $COMMAND &> /dev/null; then
 else
     echo "$COMMAND found"
 fi
+
+
+
 COMMAND=upwork
 if ! command -v $COMMAND &> /dev/null; then
     wget -O ~/upwork.deb https://upwork-usw2-desktopapp.upwork.com/binaries/v5_5_0_11_61df9c99b6df4e7b/upwork_5.5.0.11_amd64.deb
@@ -85,6 +109,8 @@ else
     echo "$COMMAND found"
 fi
 
+
+
 COMMAND=smplayer
 if ! command -v $COMMAND &> /dev/null; then
     wget -O ~/smplayer.deb https://download.opensuse.org/repositories/home:/smplayerdev/xUbuntu_20.04/amd64/smplayer_21.1.0+2.1_amd64.deb
@@ -92,12 +118,34 @@ if ! command -v $COMMAND &> /dev/null; then
 else
     echo "$COMMAND found"
 fi
+
 COMMAND=youtube-dl
 if ! command -v $COMMAND &> /dev/null; then
     sudo -H pip install --upgrade youtube-dl
 else
     echo "$COMMAND found"
 fi
+
+
+
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+
+file= flatpaks.txt
+for packages in $(cat $file); do
+   flatpak install flathub $packages -y;
+done
+
+python3 download.py
+
+mv all_icons_2202.zip /usr/share/icons/
+mv all_themes_2202.zip /usr/share/themes/
+cd /usr/share/icons/
+unzip all_icons_2202.zip
+cd /usr/share/themes/
+unzip all_themes_2202.zip
 
 # COMMAND=discord
 # if ! command -v $COMMAND &> /dev/null; then
