@@ -3,7 +3,6 @@ com.rafaelmardojai.Blanket
 io.freetubeapp.FreeTube
 org.kde.krita
 org.inkscape.Inkscape
-com.spotify.Client
 org.videolan.VLC
 org.gnome.Extensions
 org.darktable.Darktable
