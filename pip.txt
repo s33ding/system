@@ -1,0 +1,9 @@
+gdown == 4.4.0
+pandas
+matplotlib
+xlrd
+pynput
+gtts
+playsound
+tabulate
+openpyxl

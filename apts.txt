@@ -1,0 +1,10 @@
+snapd
+vim 
+tilix
+cmatrix
+goodvibes
+gnome-tweaks
+gnome-shell-pomodoro
+gnome-clocks
+nmap
+speedtest-cli
