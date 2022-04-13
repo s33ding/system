@@ -13,14 +13,14 @@ alias S="python /home/roberto/notebook/speak.py"
 alias rcsv="python /home/roberto/notebook/panda_read_csv.py"
 alias runc="python /home/roberto/notebook/run_c.py"
 alias associados="python /home/roberto/notebook/datai/associados.py"
-
-
 #-------------------------Nmap------------------------------
+
+#		       
 alias sc="nmap -sP 192.168.1.0/24 "
 alias sco="nmap -sN 192.168.1.0/24 -O"
-
-
 #-------------------------netu-------------------------------
+
+#		       
 alias myip='ip -4 addr'
 #-------------------------FIREFOX------------------------------
 
@@ -89,11 +89,9 @@ alias ctj="firefox http://newcourses.thomas.org.br/virtualclassroom/course/index
 #			  f_social_midia 
 alias instagram="firefox https://www.instagram.com" 
 alias insta="firefox https://www.instagram.com" 
-alias facebook="firefox https://www.facebook.com" 
-alias fb="firefox https://www.facebook.com"
-alias fb_p="firefox https://www.facebook.com/robertomdiniz/" 
 alias whatsaap="firefox https://web.whatsapp.com/" 
 alias messenger="firefox https://www.messenger.com"
+
 #                         f_library
 alias genesis="firefox http://gen.lib.rus.ec/"
 alias quotes="firefox https://www.goodreads.com/quotes?ref=nav_comm_quotes"
@@ -110,7 +108,6 @@ alias pydocs="firefox https://docs.python.org/3/"
 
 #                          f_ds
 alias kaggle="firefox https://www.kaggle.com/" 
-alias mturtle="firefox https://docs.python.org/3/library/turtle.html"
 
 #                          f_ds_tools
 alias replit="firefox  https://replit.com/"
@@ -157,10 +154,6 @@ alias sd="sudo su "
 alias rr="rm -r"
 alias asc2="hexdump -C" 
 
-#                         cat_files 
-alias catme="cat ~/.zshrc"
-alias vv="cat /home/roberto/Documents/notes/vim.txt"
-
 #                         vim_edit_files
 alias voc="vim /home/roberto/Documents/en_vocabulary"
 alias spelling="vim /home/roberto/Documents/spelling"
@@ -173,7 +166,6 @@ alias phrasal="vim /home/roberto/Documents/phrasal_verbs"
 alias template="vim /home/roberto/Documents/template"
 
 #                         cd_folders_home 
-alias h="cd /home/roberto/"
 alias vd="cd /home/roberto/Videos"
 alias msc="cd /home/roberto/Music"
 alias dc="cd /home/roberto/Documents"
@@ -181,9 +173,7 @@ alias pic="cd /home/roberto/Pictures"
 alias wall="cd /home/roberto/Pictures/wallpapers"
 alias dw="cd /home/roberto/Downloads"
 alias nb="cd /home/roberto/notebook"
-alias cfolder="cd /home/roberto/notebook/cfolder"
 alias bk="cd /home/roberto/Documents/books"
-alias datai="cd /home/roberto/notebook/datai"
 
 #                         cd_folders_media 
 alias md="cd /run/media/roberto/"
@@ -193,19 +183,8 @@ alias share="cd /usr/share/"
 alias icons="cd /usr/share/icons/"
 alias themes="cd /usr/share/themes/"
 
-#                          data_science_videos
-alias ds_vd="cd /home/roberto/Videos/ds_vd"
-alias ai_vd="cd /home/roberto/Videos/ds_vd/ai_vd"
-alias ca_vd="cd /home/roberto/Videos/ds_vd/ca_vd"
-alias ids_vd="cd /home/roberto/Videos/ds_vd/ids_vd"
-alias ipds_vd="cd /home/roberto/Videos/ds_vd/ipds_vd"
-alias ip_vd="cd /home/roberto/Videos/ds_vd/ip_vd"
-alias mt_vd="cd /home/roberto/Videos/ds_vd/mt_vd"
-alias fmlai_vd="cd /home/roberto/Videos/ds_vd/fmlai_vd_fundamentals_of_mathematical_logic_4_artificial_intelligence"
-                       
 #                          data_science_links
-alias ip_l="firefox https://moodle.frcneto.com.br/course/view.php?id=20#section-1"
-alias ca_l="firefox https://drive.google.com/drive/folders/1X8PGtdtiChcJ_2mbDGDCuz3SH6xyNLG4"
+
 alias cgee='firefox https://www.cgee.org.br/'
 #-------------------------software--------------------------
 
@@ -221,10 +200,8 @@ alias g="gedit"
 alias v="vim"
 alias tor=" /home/roberto/tor/start-tor-browser.desktop"
 alias YDL="youtube-dl"
-alias jupterlab="firefox http://localhost:8888/lab"
 alias jp="jupyter-notebook"
 alias kp="keepassxc"
-alias mycat="oneko"
 #-------------------------gnome-----------------------------
 
 #			gnome_programs
