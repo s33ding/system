@@ -9,3 +9,4 @@ tabulate
 openpyxl
 xlwt
 django
+sqlalchemy

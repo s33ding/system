@@ -8,3 +8,4 @@ org.gnome.Extensions
 org.darktable.Darktable
 com.github.johnfactotum.Foliate 
 com.github.phase1geo.minder
+io.dbeaver.DBeaverCommunity.
