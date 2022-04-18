@@ -1,0 +1,14 @@
+launch web browser="Ctrl+Super+H"
+settings="Shift+Alt+S"
+Hide all Windows="Shift+Super+H"
+Next Track="Shift+Alt+Right"
+Play/Pause="Shift+Alt+P"
+Previous Track="Shift+Alt+Left"
+Next Track="Shift+Alt+Right"
+Volume Down="Shift+Alt+Down"
+Volume Up="Shift+Alt+Up"
+Toggle fullscreen mode= "Shuft+Super+up"
+
+#Custom Shortcuts
+VS Code="Super+C"
+Tilix="Shift+Super+Space"
