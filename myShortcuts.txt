@@ -1,4 +1,5 @@
-launch web browser="Ctrl+Super+H"
+Launch web browser="Super+B"
+Home Folder="Super+F"
 settings="Shift+Alt+S"
 Hide all Windows="Shift+Super+H"
 Next Track="Shift+Alt+Right"
