@@ -1,0 +1,6 @@
+jdk
+https://www.oracle.com/java/technologies/downloads/
+
+spark
+https://www.apache.org/dyn/closer.lua/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
+
