@@ -8,5 +8,7 @@ playsound
 tabulate
 openpyxl
 xlwt
+lxml
 django
 sqlalchemy
+utils
