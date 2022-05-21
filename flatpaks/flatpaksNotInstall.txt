@@ -1,3 +1,0 @@
-org.flameshot.Flameshot
-org.telegram.desktop
-com.spotify.Client
