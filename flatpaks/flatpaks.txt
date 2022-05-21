@@ -9,4 +9,4 @@ org.darktable.Darktable
 com.github.johnfactotum.Foliate 
 com.github.phase1geo.minder
 io.dbeaver.DBeaverCommunity.
-flatpak install flathub md.obsidian.Obsidian
+md.obsidian.Obsidian
