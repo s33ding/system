@@ -1,7 +1,6 @@
 pandas
 matplotlib
 xlrd
-pynput
 gtts
 playsound
 tabulate
