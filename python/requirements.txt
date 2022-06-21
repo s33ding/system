@@ -1,4 +1,3 @@
-gdown == 4.4.0
 pandas
 matplotlib
 xlrd
@@ -7,6 +6,9 @@ gtts
 playsound
 tabulate
 openpyxl
+xlwt
+lxml
 django
 sqlalchemy
+utils
 scipy
