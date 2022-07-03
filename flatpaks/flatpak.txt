@@ -12,3 +12,4 @@ io.dbeaver.DBeaverCommunity.
 md.obsidian.Obsidian
 org.telegram.desktop
 com.spotify.Client
+org.eclipse.Java
