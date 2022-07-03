@@ -9,3 +9,4 @@ gnome-clocks
 nmap
 speedtest-cli
 gnome-shell-extensions
+gscan2pdf
