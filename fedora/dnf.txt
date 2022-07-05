@@ -11,3 +11,4 @@ speedtest-cli
 gnome-shell-extensions
 gscan2pdf
 xprop.x86_64
+keepassxc
